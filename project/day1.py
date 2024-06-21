@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 
-app= Flask(_name_)
+app= Flask(__name__)
 
 @app.route("/",methods=['POST','GET'])
 def home():
@@ -47,6 +47,6 @@ def signup():
 
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True, host="0.0.0.0")
 
